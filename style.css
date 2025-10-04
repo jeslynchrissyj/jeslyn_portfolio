@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+header {
+  padding: 20px;
+  position: relative;
+  animation: fadeInDown 1s ease;
+}
+
+header img {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 0 10px #00f0ff;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0;
+}
+
+h2 {
+  color: #00f0ff;
+  margin-top: 40px;
+}
+
+section {
+  padding: 20px;
+  animation: fadeInUp 1s ease;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #00f0ff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #00c0cc;
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* White color for GitHub and LinkedIn links */
+a[href*="linkedin.com"],
+a[href*="github.com"] {
+  color: #ffffff; /* Pure white */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+/* Optional: hover effect */
+a[href*="linkedin.com"]:hover,
+a[href*="github.com"]:hover {
+  color: #cccccc; /* Soft gray on hover */
+  text-decoration: underline;
+}
+header img {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 160px; /* Increased from 120px */
+  height: 160px; /* Increased from 120px */
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 0 10px #00f0ff;
+}
